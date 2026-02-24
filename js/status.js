@@ -10,6 +10,7 @@ async function getMyStatus() {
     
     
     document.getElementById('status-text').innerText = `${data.status}`;
+    document.getElementById('announcement-message').innerText = `${data.announcement}`;
     document.getElementById('Last-Updated').innerText = `${data.updated_at}`;
 
   } catch (error) {
